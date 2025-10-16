@@ -1,0 +1,91 @@
+{
+  "class_schedules": {
+    "monday": "9:00 AM - Data Structures (Room 301)\n10:30 AM - Web Development (Lab 2)\n1:00 PM - Database Systems (Room 205)",
+    "tuesday": "9:00 AM - Operating Systems (Room 401)\n11:00 AM - AI/ML (Lab 3)\n2:00 PM - Software Engineering (Room 302)",
+    "wednesday": "9:00 AM - Computer Networks (Room 303)\n10:30 AM - Cloud Computing (Lab 1)\n1:00 PM - Cybersecurity (Room 404)",
+    "thursday": "9:00 AM - Mobile App Development (Lab 2)\n11:00 AM - Data Analytics (Room 205)\n2:00 PM - Project Work (Lab 4)",
+    "friday": "9:00 AM - Theory of Computation (Room 301)\n10:30 AM - Compiler Design (Room 402)\n1:00 PM - Seminar (Auditorium)"
+  },
+  "faculty": [
+    {
+      "name": "Dr. Rajesh Kumar",
+      "department": "Computer Science",
+      "subject": "Data Structures & Algorithms",
+      "email": "rajesh.kumar@college.edu",
+      "phone": "+91-9876543210"
+    },
+    {
+      "name": "Prof. Priya Sharma",
+      "department": "Computer Science",
+      "subject": "Web Development & AI/ML",
+      "email": "priya.sharma@college.edu",
+      "phone": "+91-9876543211"
+    },
+    {
+      "name": "Dr. Anil Verma",
+      "department": "Information Technology",
+      "subject": "Cybersecurity & Networks",
+      "email": "anil.verma@college.edu",
+      "phone": "+91-9876543212"
+    },
+    {
+      "name": "Prof. Sneha Patel",
+      "department": "Computer Science",
+      "subject": "Database Systems & Cloud Computing",
+      "email": "sneha.patel@college.edu",
+      "phone": "+91-9876543213"
+    }
+  ],
+  "exam_timetable": {
+    "internal_1": {
+      "date": "October 25, 2025",
+      "exams": [
+        "Data Structures - 9:00 AM",
+        "Web Development - 2:00 PM"
+      ]
+    },
+    "internal_2": {
+      "date": "November 15, 2025",
+      "exams": [
+        "AI/ML - 9:00 AM",
+        "Cybersecurity - 2:00 PM"
+      ]
+    },
+    "semester_exam": {
+      "date": "December 10-20, 2025",
+      "exams": [
+        "All subjects - Check detailed schedule on notice board"
+      ]
+    }
+  },
+  "events": [
+    {
+      "name": "Tech Fest 2025",
+      "date": "November 5-7, 2025",
+      "description": "Annual technical festival with hackathons, coding competitions, and guest lectures"
+    },
+    {
+      "name": "AI Workshop",
+      "date": "October 22, 2025",
+      "description": "Hands-on workshop on Machine Learning and Deep Learning"
+    },
+    {
+      "name": "Career Fair",
+      "date": "November 20, 2025",
+      "description": "Meet recruiters from top tech companies"
+    },
+    {
+      "name": "Cultural Night",
+      "date": "December 1, 2025",
+      "description": "Inter-department cultural competition and performances"
+    }
+  ],
+  "motivational_quotes": [
+    "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+    "The only way to do great work is to love what you do. - Steve Jobs",
+    "Education is the passport to the future. - Malcolm X",
+    "The beautiful thing about learning is that no one can take it away from you. - B.B. King",
+    "Strive for progress, not perfection. - Unknown",
+    "Your education is a dress rehearsal for a life that is yours to lead. - Nora Ephron"
+  ]
+}
