@@ -19,6 +19,31 @@ An intelligent chatbot built with Python, Streamlit, and Google Gemini API to he
 4. Create `.env` file and add: `GEMINI_API_KEY=your_key_here`
 5. Run: `streamlit run app.py`
 
+## First Interaction
+1. Enter your name when prompted
+2. Ask questions about:
+   - Class schedules
+   - Faculty information
+   - Exam dates
+   - College events
+   - Motivational quotes
+
+
+## Acknowledgments
+
+- Google Gemini API for AI capabilities
+- Streamlit for the amazing web framework
+- Python community for excellent libraries
+
+## 🔮 Future Enhancements
+
+- [ ] Add voice input/output
+- [ ] Multi-language support
+- [ ] Integration with college LMS
+- [ ] Mobile app version
+- [ ] Student authentication system
+- [ ] Assignment reminders
+
 ## Author
 
-Bhavith - B.E in computer Science and Enginnering 2027
+- Bhavith - B.E in computer Science and Enginnering 2027
