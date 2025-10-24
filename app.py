@@ -112,15 +112,32 @@ st.markdown("""
         }
     }
     
-    /* Input box styling */
+    /* Input box styling - FIXED CURSOR */
     .stTextInput > div > div > input {
         border-radius: 25px;
         border: 2px solid #667eea;
         padding: 12px 20px;
         font-size: 16px;
-        background: white;
-        color: #333;
+        background: white !important;
+        color: #333 !important;
+        caret-color: #667eea !important;  /* Makes cursor visible and purple */
+        cursor: text !important;           /* Shows text cursor on hover */
     }
+
+    /* Make sure cursor is visible when focused */
+    .stTextInput > div > div > input:focus {
+        outline: none;
+        border: 2px solid #764ba2;
+        background: white !important;
+        caret-color: #764ba2 !important;  /* Darker purple when typing */
+    }
+
+    /* Placeholder text styling */
+    .stTextInput > div > div > input::placeholder {
+        color: #999 !important;
+        opacity: 0.7;
+    }
+
     
     /* Button styling - FIXED SIZE AND TEXT */
     .stButton > button {
@@ -333,7 +350,7 @@ with st.sidebar:
     st.markdown("### 💡 Try Asking:")
     st.markdown("""
     - "What's my schedule today?"
-    - "Tell me about Dr. Rajesh Kumar"
+    - "Tell me about Dr. Karthik Pai B H"
     - "When are the exams?"
     - "What events are coming up?"
     - "I need some motivation"

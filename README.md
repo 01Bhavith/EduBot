@@ -17,7 +17,14 @@ An intelligent chatbot built with Python, Streamlit, and Google Gemini API to he
 2. Install dependencies: `pip install -r requirements.txt`
 3. Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 4. Create `.env` file and add: `GEMINI_API_KEY=your_key_here`
-5. Run: `streamlit run app.py`
+5. -Step 1: Go to your project folder
+   -Step 2: Activate your virtual environment
+      Run: `venv\Scripts\activate`
+   -Step 3 : Install the working Streamlit version
+      pip install --upgrade pip setuptools wheel
+      pip install --upgrade streamlit
+5. -Step 4 :
+      Run : `streamlit run app.py`
 
 ## First Interaction
 1. Enter your name when prompted
@@ -46,4 +53,7 @@ An intelligent chatbot built with Python, Streamlit, and Google Gemini API to he
 
 ## Author
 
-- Bhavith - B.E in computer Science and Enginnering 2027
+- Bhavith.V          ||    - B.E in computer Science and Enginnering 2027
+- Darshan.M.Naik     ||    - B.E in computer Science and Enginnering 2027
+- Basavarag.M.G      ||    - B.E in computer Science and Enginnering 2027
+- Arun Banada        ||    - B.E in computer Science and Enginnering 2027

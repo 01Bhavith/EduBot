@@ -31,7 +31,7 @@ class EduBot:
     
     def _create_system_instruction(self):
         """Create system instruction with college data context"""
-        instruction = """You are EduBot, a friendly and helpful college assistant chatbot. 
+        instruction = """You are EduBot, a friendly and helpful college assistant chatbot for Canara Engineering College. 
 Your personality is warm, supportive, and enthusiastic about helping students.
 
 IMPORTANT RULES:
@@ -41,21 +41,50 @@ IMPORTANT RULES:
 4. If asked about information not in the college data, politely say you don't have that information
 5. Always prioritize college-specific data over general knowledge
 6. Format responses with proper markdown for readability
+7. When asked about faculty, you can filter by department (CSE, ISE, CSBS, CSD)
+8. When asked about course timings, mention both the time and the faculty member
 
 COLLEGE DATA AVAILABLE:
 """
+        
+        # Add college info
+        if 'college_info' in self.data:
+            info = self.data['college_info']
+            instruction += f"\n\nCOLLEGE: {info.get('name', 'Canara Engineering College')}\n"
+            instruction += f"DEPARTMENT: {info.get('department', 'Computer Science & Engineering')}\n"
+            instruction += f"YEAR: {info.get('year', '3rd Year')}, SEMESTER: {info.get('semester', '5th Semester')}\n"
         
         # Add class schedules
         instruction += "\n\n--- CLASS SCHEDULES ---\n"
         for day, schedule in self.data['class_schedules'].items():
             instruction += f"\n{day.capitalize()}:\n{schedule}\n"
         
-        # Add faculty information
+        # Add course details if available
+        if 'course_details' in self.data:
+            instruction += "\n\n--- COURSE DETAILS ---\n"
+            for course_code, details in self.data['course_details'].items():
+                instruction += f"\n{course_code}: {details['name']}\n"
+                instruction += f"Faculty: {details['faculty']}\n"
+                instruction += f"Credits: {details['credits']}, Type: {details['type']}\n"
+        
+        # Add faculty information (UPDATED SECTION)
         instruction += "\n\n--- FACULTY DIRECTORY ---\n"
-        for faculty in self.data['faculty']:
-            instruction += f"\n{faculty['name']} - {faculty['department']}\n"
-            instruction += f"Subject: {faculty['subject']}\n"
-            instruction += f"Email: {faculty['email']}, Phone: {faculty['phone']}\n"
+        
+        # Handle faculty organized by departments
+        if isinstance(self.data['faculty'], dict):
+            for dept_code, faculty_list in self.data['faculty'].items():
+                dept_name = dept_code.upper()
+                instruction += f"\n\n{dept_name} Department:\n"
+                for faculty in faculty_list:
+                    instruction += f"\n{faculty['name']} - {faculty.get('designation', 'Faculty')}\n"
+                    instruction += f"Subject: {faculty['subject']}\n"
+                    instruction += f"Email: {faculty.get('email', 'N/A')}, Phone: {faculty.get('phone', 'N/A')}\n"
+        else:
+            # Fallback for old format (flat list)
+            for faculty in self.data['faculty']:
+                instruction += f"\n{faculty['name']} - {faculty['department']}\n"
+                instruction += f"Subject: {faculty['subject']}\n"
+                instruction += f"Email: {faculty['email']}, Phone: {faculty['phone']}\n"
         
         # Add exam timetable
         instruction += "\n\n--- EXAM TIMETABLE ---\n"
@@ -63,6 +92,8 @@ COLLEGE DATA AVAILABLE:
             instruction += f"\n{exam_type.replace('_', ' ').title()}: {details['date']}\n"
             for exam in details['exams']:
                 instruction += f"  - {exam}\n"
+            if 'note' in details:
+                instruction += f"Note: {details['note']}\n"
         
         # Add events
         instruction += "\n\n--- UPCOMING EVENTS ---\n"
@@ -78,12 +109,13 @@ COLLEGE DATA AVAILABLE:
         
         instruction += """\n
 RESPONSE GUIDELINES:
-- For schedules: Show the relevant day's schedule clearly
-- For faculty: Display contact information in a formatted way
+- For schedules: Show the relevant day's schedule clearly with faculty names and timings
+- For faculty: Display contact information in a formatted way. If asked about a specific department, show only that department's faculty
 - For exams: Present dates and timings clearly
 - For events: Highlight exciting details
 - For motivation: Share a quote with encouraging words
 - For greetings: Be warm and friendly
+- For course queries: Mention faculty name, timing, and day when relevant
 - Always end responses by asking if they need anything else
 """
         
@@ -134,18 +166,19 @@ RESPONSE GUIDELINES:
         """Generate personalized welcome message"""
         if self.user_name:
             return f"Welcome back, **{self.user_name}**! 😊 How can I assist you today?"
-        return "Hello! 👋 I'm **EduBot**, your college assistant. What's your name?"
+        return "Hello! 👋 I'm **EduBot**, your Canara Engineering College assistant. What's your name?"
     
     def set_user_name(self, name):
         """Set user name for personalization"""
         self.user_name = name.strip()
         welcome = f"Nice to meet you, **{self.user_name}**! 😊\n\n"
         welcome += "I can help you with:\n\n"
-        welcome += "📅 **Class Schedules** - Daily timetables\n"
-        welcome += "👨‍🏫 **Faculty Details** - Contact information\n"
+        welcome += "📅 **Class Schedules** - CSE 5th Semester timetables\n"
+        welcome += "👨‍🏫 **Faculty Details** - Contact information by department\n"
         welcome += "📝 **Exam Timetable** - Upcoming tests and exams\n"
         welcome += "🎉 **College Events** - Festivals, workshops, and activities\n"
-        welcome += "💪 **Motivation** - Inspirational quotes\n\n"
+        welcome += "💪 **Motivation** - Inspirational quotes\n"
+        welcome += "📚 **Course Information** - Faculty, timings, and credits\n\n"
         welcome += "What would you like to know?"
         return welcome
     

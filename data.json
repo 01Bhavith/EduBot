@@ -1,91 +1,316 @@
 {
-  "class_schedules": {
-    "monday": "9:00 AM - Data Structures (Room 301)\n10:30 AM - Web Development (Lab 2)\n1:00 PM - Database Systems (Room 205)",
-    "tuesday": "9:00 AM - Operating Systems (Room 401)\n11:00 AM - AI/ML (Lab 3)\n2:00 PM - Software Engineering (Room 302)",
-    "wednesday": "9:00 AM - Computer Networks (Room 303)\n10:30 AM - Cloud Computing (Lab 1)\n1:00 PM - Cybersecurity (Room 404)",
-    "thursday": "9:00 AM - Mobile App Development (Lab 2)\n11:00 AM - Data Analytics (Room 205)\n2:00 PM - Project Work (Lab 4)",
-    "friday": "9:00 AM - Theory of Computation (Room 301)\n10:30 AM - Compiler Design (Room 402)\n1:00 PM - Seminar (Auditorium)"
+  "college_info": {
+    "name": "Canara Engineering College",
+    "location": "Benjanapadavu, Mangalore",
+    "department": "Computer Science & Engineering",
+    "year": "3rd Year",
+    "semester": "5th Semester"
   },
-  "faculty": [
-    {
-      "name": "Dr. Rajesh Kumar",
-      "department": "Computer Science",
-      "subject": "Data Structures & Algorithms",
-      "email": "rajesh.kumar@college.edu",
-      "phone": "+91-9876543210"
+  
+  "class_schedules": {
+    "monday": "09:00-09:55 → TOC (L) - Mrs. Saritha M\n10:15-11:10 → AI (L) - Mrs. Verdine Saviola Noronha\n11:10-12:05 → SE&PM (L) - Mrs. Aruna Kumari G K\n12:05-01:00 → LUNCH BREAK\n01:00-02:45 → Web Lab (A1) - Ms. Annapurna M / Ms. Sukshma Shetty (A1)\n01:00-02:45 → Mini Project (A2) - Mrs. Babitha Ganesh Kulal (A2)\n02:55-03:40 → CN (L) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n03:40-04:35 → RM (L) - Dr. Vinay P",
+    
+    "tuesday": "09:00-09:55 → TOC (L) - Mrs. Saritha M\n10:15-11:10 → CN LAB (P) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n11:10-12:05 → CN LAB (P) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → RM (T) - Dr. Vinay P\n01:55-02:45 → TOC (T) - Mrs. Saritha M\n02:55-03:40 → Skill Enhancement Training (SET)\n03:40-04:35 → Skill Enhancement Training (SET)",
+    
+    "wednesday": "09:00-09:55 → RM (L) - Dr. Vinay P\n10:15-12:05 → Web Lab (A2) - Ms. Annapurna M / Ms. Sukshma Shetty (A1)\n10:15-12:05 → Mini Project (A1) - Mrs. Babitha Ganesh Kulal (A2)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → SE&PM (L) - Mrs. Aruna Kumari G K\n01:55-02:45 → Co-Curricular Activities\n02:55-03:40 → Co-Curricular Activities\n03:40-04:35 → Co-Curricular Activities",
+    
+    "thursday": "09:00-09:55 → AI (L) - Mrs. Verdine Saviola Noronha\n10:15-11:10 → SE&PM (L) - Mrs. Aruna Kumari G K\n11:10-12:05 → CN (L) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → EVS (L) - Ms. Kavya A M\n01:55-02:45 → TOC (T) - Mrs. Saritha M\n02:55-03:40 → BNSK559/BPEK559/BYOK559 (Elective)\n03:40-04:35 → BNSK559/BPEK559/BYOK559 (Elective)",
+    
+    "friday": "09:00-09:55 → CN (L) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n10:15-11:10 → TOC (L) - Mrs. Saritha M\n11:10-12:05 → SE&PM (L) - Mrs. Aruna Kumari G K\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → AI (L) - Mrs. Verdine Saviola Noronha\n01:55-02:45 → RM (T) - Dr. Vinay P\n02:55-03:40 → Mini Project\n03:40-04:35 → Mini Project",
+    
+    "saturday": "09:00-09:55 → SE&PM (A) - Mrs. Aruna Kumari G K\n10:15-11:10 → AI (A) - Mrs. Verdine Saviola Noronha\n11:10-12:05 → CN (A) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → TOC (A) - Mrs. Saritha M\n01:55-02:45 → Mentoring\n02:55-03:40 → Remedial\n03:40-04:35 → Remedial"
+  },
+
+  "course_details": {
+    "BCS501": {
+      "name": "Software Engineering & Project Management (SE & PM)",
+      "code": "BCS501",
+      "type": "PCC",
+      "credits": 4,
+      "structure": "4-0-0-0",
+      "faculty": "Mrs. Aruna Kumari G K"
     },
-    {
-      "name": "Prof. Priya Sharma",
-      "department": "Computer Science",
-      "subject": "Web Development & AI/ML",
-      "email": "priya.sharma@college.edu",
-      "phone": "+91-9876543211"
+    "BCS502": {
+      "name": "Computer Network (CN)",
+      "code": "BCS502",
+      "type": "IPCC",
+      "credits": 4,
+      "structure": "3-0-2-0",
+      "faculty": ["Mrs. Sukshma Shetty", "Dr. Pavithra D S(P)"]
     },
-    {
-      "name": "Dr. Anil Verma",
-      "department": "Information Technology",
-      "subject": "Cybersecurity & Networks",
-      "email": "anil.verma@college.edu",
-      "phone": "+91-9876543212"
+    "BCS503": {
+      "name": "Theory of Computation (TOC)",
+      "code": "BCS503",
+      "type": "PCC",
+      "credits": 4,
+      "structure": "3-2-0-0",
+      "faculty": "Mrs. Saritha M"
     },
-    {
-      "name": "Prof. Sneha Patel",
-      "department": "Computer Science",
-      "subject": "Database Systems & Cloud Computing",
-      "email": "sneha.patel@college.edu",
-      "phone": "+91-9876543213"
+    "BCSL504": {
+      "name": "Web Technology Lab (Web Lab)",
+      "code": "BCSL504",
+      "type": "PCCL",
+      "credits": 1,
+      "structure": "0-0-2-0",
+      "faculty": ["Ms. Annapurna M", "Ms. Sukshma Shetty (A1)", "Dr. Rakshith M D (A2)"]
+    },
+    "BCS515B": {
+      "name": "Artificial Intelligence (AI)",
+      "code": "BCS515B",
+      "type": "PEC",
+      "credits": 3,
+      "structure": "3-0-0-0",
+      "faculty": "Mrs. Verdine Saviola Noronha"
+    },
+    "BCS586": {
+      "name": "Mini Project",
+      "code": "BCS586",
+      "type": "PROJ",
+      "credits": 2,
+      "structure": "0-0-4-0",
+      "faculty": "Mrs. Babitha Ganesh Kulal"
+    },
+    "BRMK527": {
+      "name": "Research Methodology and IPR (RM)",
+      "code": "BRMK527",
+      "type": "AEC",
+      "credits": 3,
+      "structure": "2-2-0-0",
+      "faculty": "Dr. Vinay P"
+    },
+    "BCS608": {
+      "name": "Environmental Studies and E-waste Management (EVS)",
+      "code": "BCS608",
+      "type": "HSMC",
+      "credits": 1,
+      "structure": "1-0-0-0",
+      "faculty": "Ms. Kavya A M"
+    },
+    "BNSK559": {
+      "name": "National Service Scheme (NSS)",
+      "code": "BNSK559",
+      "type": "Elective",
+      "credits": 0,
+      "faculty": "Ms. Kavya A M(NSS)"
     }
-  ],
+  },
+
+  "faculty": {
+    "cse": [
+      {
+        "name": "Dr. Karthik Pai B H",
+        "designation": "Professor & Head of Department",
+        "department": "Computer Science & Engineering",
+        "subject": "Head of Department",
+        "email": "karthikpai@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Dr. Vinay P",
+        "designation": "Associate Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Research Methodology and IPR (RM)",
+        "email": "vinayp@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Aruna Kumari G K",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Software Engineering & Project Management (SE&PM)",
+        "email": "arunakumari@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Sukshma Shetty",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Computer Network (CN)",
+        "email": "sukshumashetty@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Dr. Pavithra D S",
+        "designation": "Assistant Professor (Practical)",
+        "department": "Computer Science & Engineering",
+        "subject": "Computer Network Lab (CN)",
+        "email": "pavithrad@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Saritha M",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Theory of Computation (TOC)",
+        "email": "saritham@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Ms. Annapurna M",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Web Technology Lab",
+        "email": "annapurnam@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Dr. Rakshith M D",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Web Technology Lab (A2)",
+        "email": "rakshithmd@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Verdine Saviola Noronha",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Artificial Intelligence (AI)",
+        "email": "verdine@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Babitha Ganesh Kulal",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Mini Project",
+        "email": "babithaganesh@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Ms. Kavya A M",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Environmental Studies and E-waste Management (EVS)",
+        "email": "kavyaam@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mr. Alok Ranjan",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Cloud Computing, AWS",
+        "email": "alokranjan@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mr. Shatananda Bhat P",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Web Development, Software Engineering",
+        "email": "shatanandabhat@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mr. Janardhana Bhat K",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Python Programming",
+        "email": "janardhanabhat@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Sowmya K",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Computer Fundamentals",
+        "email": "sowmyak@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      },
+      {
+        "name": "Mrs. Saritha Suvarna",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Engineering",
+        "subject": "Full Stack Development",
+        "email": "sarithasuvarna@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      }
+    ],
+    "ise": [
+      {
+        "name": "Dr. H Manoj T Gadiyar",
+        "designation": "Professor & Head of Department",
+        "department": "Information Science & Engineering",
+        "subject": "Head of Department",
+        "email": "manojgadiyar@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      }
+    ],
+    "csbs": [
+      {
+        "name": "Dr. Rajgopal K T",
+        "designation": "Associate Professor & Head of Department",
+        "department": "Computer Science & Business System",
+        "subject": "Head of Department",
+        "email": "rajgopalk@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      }
+    ],
+    "csd": [
+      {
+        "name": "Ms. Sourabha S Rai",
+        "designation": "Assistant Professor",
+        "department": "Computer Science & Design",
+        "subject": "Design Courses",
+        "email": "sourabhsrai@canaraengineering.in",
+        "phone": "+91-824-2278302"
+      }
+    ]
+  },
+
   "exam_timetable": {
-    "internal_1": {
-      "date": "October 25, 2025",
-      "exams": [
-        "Data Structures - 9:00 AM",
-        "Web Development - 2:00 PM"
-      ]
-    },
     "internal_2": {
-      "date": "November 15, 2025",
+      "date": "To be announced soon",
       "exams": [
-        "AI/ML - 9:00 AM",
-        "Cybersecurity - 2:00 PM"
-      ]
+        "Theory Exam - Date will be notified",
+        "Practical Exam - Date will be notified"
+      ],
+      "note": "Second Internal Exam timetable will be available soon. Check college notice board regularly."
     },
     "semester_exam": {
-      "date": "December 10-20, 2025",
+      "date": "December 2025 (Tentative)",
       "exams": [
-        "All subjects - Check detailed schedule on notice board"
+        "All subjects - Check VTU official website for detailed schedule"
       ]
     }
   },
+
   "events": [
     {
+      "name": "Branch Entry 2025",
+      "date": "October 9, 2025",
+      "description": "Cultural programme organized by Cultural & Arts Committee for 3rd semester students at Dr. P. Dayananda Pai – P. Sathish Pai Main Stage"
+    },
+    {
+      "name": "Ayudha Pooja Celebration",
+      "date": "September 30, 2025",
+      "description": "Dussehra celebration with Rangoli, Bhajanas, and laboratory poojas to seek divine blessings"
+    },
+    {
       "name": "Tech Fest 2025",
-      "date": "November 5-7, 2025",
+      "date": "November 2025 (To be announced)",
       "description": "Annual technical festival with hackathons, coding competitions, and guest lectures"
     },
     {
-      "name": "AI Workshop",
-      "date": "October 22, 2025",
-      "description": "Hands-on workshop on Machine Learning and Deep Learning"
-    },
-    {
-      "name": "Career Fair",
-      "date": "November 20, 2025",
-      "description": "Meet recruiters from top tech companies"
+      "name": "Placement Drives",
+      "date": "Ongoing - October to December 2025",
+      "description": "Multiple companies visiting campus for recruitment. Prepare well and participate actively"
     },
     {
       "name": "Cultural Night",
-      "date": "December 1, 2025",
+      "date": "December 2025 (To be announced)",
       "description": "Inter-department cultural competition and performances"
     }
   ],
+
   "motivational_quotes": [
     "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
     "The only way to do great work is to love what you do. - Steve Jobs",
     "Education is the passport to the future. - Malcolm X",
     "The beautiful thing about learning is that no one can take it away from you. - B.B. King",
     "Strive for progress, not perfection. - Unknown",
-    "Your education is a dress rehearsal for a life that is yours to lead. - Nora Ephron"
+    "Your education is a dress rehearsal for a life that is yours to lead. - Nora Ephron",
+    "Engineering is the art of directing the great sources of power in nature for the use and convenience of man. - Thomas Tredgold",
+    "The engineer has been, and is, a maker of history. - James Kip Finch"
   ]
 }
