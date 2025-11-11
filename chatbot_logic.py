@@ -1,7 +1,7 @@
 import json
 import random
 from datetime import datetime
-from google import genai
+import google.generativeai as genai
 import os
 from dotenv import load_dotenv
 
@@ -15,13 +15,24 @@ class EduBot:
         with open('data.json', 'r') as f:
             self.data = json.load(f)
         
-        # Initialize Gemini client
+        # Initialize Gemini API
         self.api_key = os.getenv('GEMINI_API_KEY')
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not found in environment variables")
         
-        self.client = genai.Client(api_key=self.api_key)
-        self.model_name = 'gemini-1.5-flash'
+        # Configure the API
+        genai.configure(api_key=self.api_key)
+        
+        # Initialize the model - UPDATED TO GEMINI 2.0 FLASH
+        self.model = genai.GenerativeModel(
+            model_name='gemini-2.0-flash-001',
+            generation_config={
+                'temperature': 0.7,
+                'top_p': 0.95,
+                'top_k': 40,
+                'max_output_tokens': 1024,
+            }
+        )
         
         self.user_name = None
         self.conversation_history = []
@@ -67,10 +78,9 @@ COLLEGE DATA AVAILABLE:
                 instruction += f"Faculty: {details['faculty']}\n"
                 instruction += f"Credits: {details['credits']}, Type: {details['type']}\n"
         
-        # Add faculty information (UPDATED SECTION)
+        # Add faculty information
         instruction += "\n\n--- FACULTY DIRECTORY ---\n"
         
-        # Handle faculty organized by departments
         if isinstance(self.data['faculty'], dict):
             for dept_code, faculty_list in self.data['faculty'].items():
                 dept_name = dept_code.upper()
@@ -80,7 +90,6 @@ COLLEGE DATA AVAILABLE:
                     instruction += f"Subject: {faculty['subject']}\n"
                     instruction += f"Email: {faculty.get('email', 'N/A')}, Phone: {faculty.get('phone', 'N/A')}\n"
         else:
-            # Fallback for old format (flat list)
             for faculty in self.data['faculty']:
                 instruction += f"\n{faculty['name']} - {faculty['department']}\n"
                 instruction += f"Subject: {faculty['subject']}\n"
@@ -124,12 +133,6 @@ RESPONSE GUIDELINES:
     def get_response(self, user_input):
         """Generate response using Gemini API with college context"""
         try:
-            # Add user message to conversation history
-            self.conversation_history.append({
-                'role': 'user',
-                'parts': [user_input]
-            })
-            
             # Prepare context with user name if available
             context = self.system_instruction
             if self.user_name:
@@ -140,24 +143,13 @@ RESPONSE GUIDELINES:
             today = datetime.now().strftime('%A, %B %d, %Y')
             context += f"\nTODAY'S DATE: {today}\n"
             
-            # Create the prompt with full context
+            # Create the full prompt
             full_prompt = f"{context}\n\nUser message: {user_input}"
             
-            # Generate response using Gemini
-            response = self.client.models.generate_content(
-                model=self.model_name,
-                contents=full_prompt
-            )
+            # Generate response using Gemini 2.0 Flash
+            response = self.model.generate_content(full_prompt)
             
-            bot_response = response.text
-            
-            # Add bot response to conversation history
-            self.conversation_history.append({
-                'role': 'model',
-                'parts': [bot_response]
-            })
-            
-            return bot_response
+            return response.text
             
         except Exception as e:
             return f"⚠️ Sorry, I encountered an error: {str(e)}\nPlease try again or rephrase your question."

@@ -1,18 +1,24 @@
 {
   "college_info": {
     "name": "Canara Engineering College",
-    "location": "Benjanapadavu, Mangalore",
+    "full_name": "Canara Engineering College (CEC)",
+    "location": "Benjanapadavu, Mangalore, Karnataka",
+    "affiliation": "Visvesvaraya Technological University (VTU), Belagavi",
+    "type": "Premier Engineering Institute",
+    "established": "Established Engineering Institute",
     "department": "Computer Science & Engineering",
     "year": "3rd Year",
-    "semester": "5th Semester"
+    "semester": "5th Semester",
+    "vision": "To be an Engineering Institute of highest repute and produce world-class engineers catering to the needs of mankind",
+    "mission": "Provide the right environment to develop quality education for all, irrespective of caste, creed or religion to produce future leaders"
   },
   
   "class_schedules": {
-    "monday": "09:00-09:55 → TOC (L) - Mrs. Saritha M\n10:15-11:10 → AI (L) - Mrs. Verdine Saviola Noronha\n11:10-12:05 → SE&PM (L) - Mrs. Aruna Kumari G K\n12:05-01:00 → LUNCH BREAK\n01:00-02:45 → Web Lab (A1) - Ms. Annapurna M / Ms. Sukshma Shetty (A1)\n01:00-02:45 → Mini Project (A2) - Mrs. Babitha Ganesh Kulal (A2)\n02:55-03:40 → CN (L) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n03:40-04:35 → RM (L) - Dr. Vinay P",
+    "monday": "09:00-09:55 → TOC (L) - Mrs. Saritha M\n10:15-11:10 → AI (L) - Mrs. Verdine Saviola Noronha\n11:10-12:05 → SE&PM (L) - Mrs. Aruna Kumari G K\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → Web Lab (A1) - Ms. Annapurna M / Ms. Sukshma Shetty (A1)\n01:00-01:55 → Mini Project (A2) - Mrs. Babitha Ganesh Kulal (A2)\n01:55-02:45 → CN (L) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n02:55-03:40 → RM (L) - Dr. Vinay P\n03:40-04:35 → Skill Enhancement Training (SET)",
     
     "tuesday": "09:00-09:55 → TOC (L) - Mrs. Saritha M\n10:15-11:10 → CN LAB (P) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n11:10-12:05 → CN LAB (P) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → RM (T) - Dr. Vinay P\n01:55-02:45 → TOC (T) - Mrs. Saritha M\n02:55-03:40 → Skill Enhancement Training (SET)\n03:40-04:35 → Skill Enhancement Training (SET)",
     
-    "wednesday": "09:00-09:55 → RM (L) - Dr. Vinay P\n10:15-12:05 → Web Lab (A2) - Ms. Annapurna M / Ms. Sukshma Shetty (A1)\n10:15-12:05 → Mini Project (A1) - Mrs. Babitha Ganesh Kulal (A2)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → SE&PM (L) - Mrs. Aruna Kumari G K\n01:55-02:45 → Co-Curricular Activities\n02:55-03:40 → Co-Curricular Activities\n03:40-04:35 → Co-Curricular Activities",
+    "wednesday": "09:00-09:55 → RM (L) - Dr. Vinay P\n10:15-11:10 → Web Lab (A2) - Ms. Annapurna M / Ms. Sukshma Shetty (A1)\n10:15-11:10 → Mini Project (A1) - Mrs. Babitha Ganesh Kulal (A2)\n11:10-12:05 → Web Lab (A2) / Mini Project (A1) [Continued]\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → SE&PM (L) - Mrs. Aruna Kumari G K\n01:55-02:45 → Co-Curricular Activities\n02:55-03:40 → Co-Curricular Activities\n03:40-04:35 → Co-Curricular Activities",
     
     "thursday": "09:00-09:55 → AI (L) - Mrs. Verdine Saviola Noronha\n10:15-11:10 → SE&PM (L) - Mrs. Aruna Kumari G K\n11:10-12:05 → CN (L) - Mrs. Sukshma Shetty / Dr. Pavithra D S(P)\n12:05-01:00 → LUNCH BREAK\n01:00-01:55 → EVS (L) - Ms. Kavya A M\n01:55-02:45 → TOC (T) - Mrs. Saritha M\n02:55-03:40 → BNSK559/BPEK559/BYOK559 (Elective)\n03:40-04:35 → BNSK559/BPEK559/BYOK559 (Elective)",
     
@@ -184,46 +190,6 @@
         "subject": "Environmental Studies and E-waste Management (EVS)",
         "email": "kavyaam@canaraengineering.in",
         "phone": "+91-824-2278302"
-      },
-      {
-        "name": "Mr. Alok Ranjan",
-        "designation": "Assistant Professor",
-        "department": "Computer Science & Engineering",
-        "subject": "Cloud Computing, AWS",
-        "email": "alokranjan@canaraengineering.in",
-        "phone": "+91-824-2278302"
-      },
-      {
-        "name": "Mr. Shatananda Bhat P",
-        "designation": "Assistant Professor",
-        "department": "Computer Science & Engineering",
-        "subject": "Web Development, Software Engineering",
-        "email": "shatanandabhat@canaraengineering.in",
-        "phone": "+91-824-2278302"
-      },
-      {
-        "name": "Mr. Janardhana Bhat K",
-        "designation": "Assistant Professor",
-        "department": "Computer Science & Engineering",
-        "subject": "Python Programming",
-        "email": "janardhanabhat@canaraengineering.in",
-        "phone": "+91-824-2278302"
-      },
-      {
-        "name": "Mrs. Sowmya K",
-        "designation": "Assistant Professor",
-        "department": "Computer Science & Engineering",
-        "subject": "Computer Fundamentals",
-        "email": "sowmyak@canaraengineering.in",
-        "phone": "+91-824-2278302"
-      },
-      {
-        "name": "Mrs. Saritha Suvarna",
-        "designation": "Assistant Professor",
-        "department": "Computer Science & Engineering",
-        "subject": "Full Stack Development",
-        "email": "sarithasuvarna@canaraengineering.in",
-        "phone": "+91-824-2278302"
       }
     ],
     "ise": [
@@ -258,6 +224,57 @@
     ]
   },
 
+  "facilities": {
+    "library": {
+      "name": "Central Library",
+      "description": "More than 43,000 books of various genres in a state-of-art infrastructure of 1,300 square meters",
+      "capacity": "300 readers at a time",
+      "features": ["Reference Section", "Digital Library", "Reading Rooms"]
+    },
+    "hostel": {
+      "name": "On-Campus Hostel",
+      "description": "Spacious buildings with homely environment",
+      "facilities": ["Water cooler and purifier", "Telephone and television", "Reading room", "On-site medical healthcare"]
+    },
+    "sports": {
+      "name": "Sports & Physical Activities",
+      "description": "Indoor and outdoor facilities for games and physical activities",
+      "features": ["Regular sports events", "Sports clubs", "Activity records"]
+    },
+    "internet": {
+      "name": "High-Speed Internet",
+      "description": "600 Mbps leased line internet with unlimited usage",
+      "coverage": "All computers in campus",
+      "availability": "24/7 connectivity"
+    },
+    "transport": {
+      "name": "College Transportation",
+      "description": "Around 20 college buses covering city and surrounding areas",
+      "features": ["Daily transportation", "Wide network coverage", "Emergency vehicles"]
+    },
+    "healthcare": {
+      "name": "On-Campus Healthcare",
+      "description": "Healthcare facility and personalized counseling",
+      "services": ["Regular health checkups", "One-to-one counseling", "Emergency care"]
+    },
+    "banking": {
+      "name": "Canara Bank Branch",
+      "description": "On-campus Canara Bank branch with ATM",
+      "services": ["Banking solutions", "24x7 ATM facility"]
+    }
+  },
+
+  "placement": {
+    "overview": "Dedicated Training & Placement Cell with strong industry connections",
+    "highlights": [
+      "Employability Skill Enhancement Sessions",
+      "Top Recruiters from various sectors",
+      "Multiple placement offers every year",
+      "Strong alumni network"
+    ],
+    "recruiters": "Leading companies across IT, Core Engineering, and Business sectors"
+  },
+
   "exam_timetable": {
     "internal_2": {
       "date": "To be announced soon",
@@ -289,7 +306,7 @@
     {
       "name": "Tech Fest 2025",
       "date": "November 2025 (To be announced)",
-      "description": "Annual technical festival with hackathons, coding competitions, and guest lectures"
+      "description": "Annual technical festival with hackathons, coding competitions, workshops, and guest lectures from industry experts"
     },
     {
       "name": "Placement Drives",
@@ -300,6 +317,29 @@
       "name": "Cultural Night",
       "date": "December 2025 (To be announced)",
       "description": "Inter-department cultural competition and performances"
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "Mr. M.B Padiyar",
+      "designation": "Retired Director, KIOCL",
+      "quote": "I had good interaction with students. It's really good. I enjoyed programme and it is really to be appreciated for total participation of staff and students."
+    },
+    {
+      "name": "Prof. V L Narasimhan",
+      "designation": "Vice President, Srikar & Associates USA, Australia & India",
+      "quote": "A wonderful Campus coupled with a dedicated set of staff and faculty members. Please keep up the good work so that you can excel internationally."
+    },
+    {
+      "name": "Dr. H R Guruprasad",
+      "designation": "Professor and HOD, Dept. of CSE BMSCE, Bangalore",
+      "quote": "A Beautiful Campus in the heart of nature makes it serene. Motivated faculty members with commitment."
+    },
+    {
+      "name": "Mohith P Tahiliani",
+      "designation": "Assistant Professor, Dept. of CSE, NITK Surathkal",
+      "quote": "Had a wonderful experience while interacting with B.E and M.Tech students. They are very interactive and have a proactive approach."
     }
   ],
 
